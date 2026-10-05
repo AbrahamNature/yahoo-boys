@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Homescreen extends StatelessWidget {
-   @override
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -18,10 +18,7 @@ class Homescreen extends StatelessWidget {
               children: [
                 const Text(
                   'Internet Fraud Among Youths in NSUk',
-                  style: TextStyle(
-                    fontSize: 26,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(height: 15),
                 const Text(
@@ -34,21 +31,20 @@ class Homescreen extends StatelessWidget {
                   'to make funds. its becoming a job or sources of income '
                   'for most NSUK students, this project highlights reasons why '
                   'young people get into fraud/internet fruad specifically amoungs & its remedy.',
-                  style: TextStyle(
-                    fontSize: 18,
-                    height: 1.5,
-                  ),
+                  style: TextStyle(fontSize: 18, height: 1.5),
                 ),
 
                 const SizedBox(height: 20),
 
-                const Text('text', style: TextStyle(fontSize: 18),
-
+                const Text('text', style: TextStyle(fontSize: 18)),
+                SizedBox(
+                  width: 200,
+                  height: 200,
+                  child: Image.asset(
+                    'assets/images/yahoo.webp',
+                    fit: BoxFit.cover,
+                  ),
                 ),
-              SizedBox(width: 200, height: 200,
-              child: Image.asset('assets/images/yahoo.webp', fit: BoxFit.cover,),
-
-              )
               ],
             ),
           ),
